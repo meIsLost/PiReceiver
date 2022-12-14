@@ -12,9 +12,7 @@ namespace PiReceiver
             StartListener();
         }
 
-        /// <summary>
-        /// Starts to listen to UDP broadcasts and forwards received data to the Api method.
-        /// </summary>
+      
         public static void StartListener()
         {
             using (UdpClient socket = new UdpClient())
@@ -32,10 +30,7 @@ namespace PiReceiver
             }
         }
 
-        /// <summary>
-        /// Method to post data to and API by URL.
-        /// </summary>
-        /// <param name="recieved">Data to be posted.</param>
+      
         public static async void PostToAPI(string recieved)
         {
             try
